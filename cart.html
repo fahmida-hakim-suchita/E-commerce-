@@ -1,6 +1,4 @@
-
-
-<!--Gallery Page Design-->
+<!--Product Page Design-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,11 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+    <title>Product Page</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-
-    <!-- Lightbox Pupup -->
-    <link rel="stylesheet" href="css/lightbox.css">
 
     <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -25,8 +20,8 @@
     <link rel="stylesheet" href="css/responsive-style.css">
 </head>
 
-<body class="gallery">
-    <!-- Navbar Section Start -->
+<body class="product">
+    <!-- Navbar Section -->
     <header id="full_nav">
         <div class="header">
             <div class="container">
@@ -42,7 +37,7 @@
 
                     <div class="collapse navbar-collapse" id="main-nav">
                         <ul class="navbar-nav mx-auto">
-                            <li class="nav-item">
+                            <li class="nav-item active">
                                 <a class="nav-link" href="index.html">Home</a>
                             </li>
 
@@ -55,11 +50,11 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Gallery</a>
+                                <a class="nav-link" href="gallery.html">Gallery</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="cart.html">Cart <span class="badge bg-danger cart-quantity-count">0</span></a>
+                                <a class="nav-link active" href="#">Cart <span class="badge bg-danger cart-quantity-count">0</span></a>
                             </li>
                         </ul>
 
@@ -74,78 +69,96 @@
             </div>
         </div>
     </header>
-    <!-- Navbar Section Exit -->
+    <!-- Navbar Section end -->
 
     <!-- banner Section start -->
     <section class="banner_section">
         <div class="container">
             <div class="banner-content">
-                <h1>Gallery</h1>
+                <h1>Cart</h1>
             </div>
         </div>
     </section>
     <!-- banner section exit -->
 
-    <!-- Gallery Section Start-->
-    <section class="gallery_section">
+    <!--Product Section start -->
+    <section class="product_section">
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-12 text-center pb-5">
-                    <h2 class="section-title">Our Gallery</h2>
-                    <p class="section-subtitle">The Passage Experienced A Surge In Popularity During The 1960s When
-                        Again During The 90s As Desktop Publishers</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 mb-4">
-                    <a href="images/gallery/g-1.jpg" data-lightbox="image" data-title="Lemon">
-                        <img decoding="async" src="images/gallery/g-1.jpg" class="img-fluid rounded-3">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-lg-4 mb-4">
-                    <a href="images/gallery/g-2.jpg" data-lightbox="image" data-title="Lemon">
-                        <img decoding="async" src="images/gallery/g-2.jpg" class="img-fluid rounded-3">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-lg-4 mb-4">
-                    <a href="images/gallery/g-3.jpg" data-lightbox="image" data-title="Lemon">
-                        <img decoding="async" src="images/gallery/g-3.jpg" class="img-fluid rounded-3">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-lg-4 mb-4">
-                    <a href="images/gallery/g-4.jpg" data-lightbox="image" data-title="Lemon">
-                        <img decoding="async" src="images/gallery/g-4.jpg" class="img-fluid rounded-3">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-lg-4 mb-4">
-                    <a href="images/gallery/g-5.jpg" data-lightbox="image" data-title="Lemon">
-                        <img decoding="async" src="images/gallery/g-5.jpg" class="img-fluid rounded-3">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-lg-4 mb-4">
-                    <a href="images/gallery/g-6.jpg" data-lightbox="image" data-title="Lemon">
-                        <img decoding="async" src="images/gallery/g-6.jpg" class="img-fluid rounded-3">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-lg-4 mb-4">
-                    <a href="images/gallery/g-1.jpg" data-lightbox="image" data-title="Lemon">
-                        <img decoding="async" src="images/gallery/g-1.jpg" class="img-fluid rounded-3">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-lg-4 mb-4">
-                    <a href="images/gallery/g-7.jpg" data-lightbox="image" data-title="Lemon">
-                        <img decoding="async" src="images/gallery/g-7.jpg" class="img-fluid rounded-3">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-lg-4 mb-4">
-                    <a href="images/gallery/g-8.jpg" data-lightbox="image" data-title="Lemon">
-                        <img decoding="async" src="images/gallery/g-8.jpg" class="img-fluid rounded-3">
-                    </a>
+                    <h2 class="section-title">Cart Products</h2>
+                    <p class="section-subtitle">Here are the products you have added to your cart.</p>
                 </div>
             </div>
+            <div class="row align-items-center py-5">
+                <div class="col-xl-12 col-lg-12 col-12 mb-5">
+                    <div class="cart-product-content">
+                        <table class="table table-bordered cart-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"><h4>Product</h4></th>
+                                    <th scope="col"><h4>Price</h4></th>
+                                    <th scope="col"><h4>Quantity</h4></th>
+                                    <th scope="col"><h4>Total</h4></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- <tr>
+                                    <td>
+                                        <div class="product-info">
+                                            <img src="./images/product-1.jpg" alt="">
+                                            <div class="product-details">
+                                                <h6>Product Name</h6>
+                                                <p>Product Description</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><p>675</p></td>
+                                    <td>
+                                        <div class="quantity">
+                                            <button class="btn minus-btn"><i class="fas fa-minus"></i></button>
+                                            <input type="text" value="1">
+                                            <button class="btn plus-btn"><i class="fas fa-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td>$100</td>
+                                    <td>
+                                        <button class="btn btn-danger">Remove</button>
+                                    </td>
+                                </tr> -->
+                            </tbody>
+                            <tfoot>
+                                <!-- <tr>
+                                    <td colspan="3"><h4>Total</h4></td>
+                                    <td><h4>$100</h4></td>
+                                </tr> -->
+                        </table>
+
+                        <div class="cart-action">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <a href="product.html" class="btn main-btn">Continue Shopping</a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12 text-lg-end text-md-end text-center">
+                                    <button 
+                                        class="btn main-btn clear-cart" 
+                                        style="background: linear-gradient(to right, #dc3545, #d30014); color: white; border: none;" 
+                                        onmouseover="this.style.background='linear-gradient(to right, #d30014, #dc3545)'" 
+                                        onmouseout="this.style.background='linear-gradient(to right, #dc3545, #d30014)'">
+                                        Clear Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
-    <!-- Gallery Section Exit -->
+    <!--Product Section Exit -->
 
-    <!-- Footer section Start-->
+    <!-- Footer section -->
     <section class="footer_wrapper mt-3 mt-md-0">
         <div class="container px-5 px-lg-0">
             <div class="row">
@@ -197,12 +210,6 @@
         </div>
     </section>
     <!-- Footer Section Exit  -->
-
-    <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Lightbox Pupup -->
-    <script src="js/lightbox.js"></script>
 
     <!-- Bootstrap 5 CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>

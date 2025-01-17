@@ -1,81 +1,263 @@
+<!--Product Page Design-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Organic Market - Home</title>
+    <title>Product Page</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome 5 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive-style.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">Organic Market</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Products</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section class="hero">
-        <h1>Fresh Organic Foods Delivered to Your Doorstep</h1>
-        <p>Healthy living starts here</p>
-        <a href="product.html" class="btn">Shop Now</a>
-    </section>
-    <footer>
-        <p>&copy; 2025 Organic Market</p>
-    </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - Organic Market</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">Organic Market</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Products</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section class="products">
-        <h1>Our Organic Products</h1>
-        <div class="product-list">
-            <div class="product">
-                <img src="images/apple.jpg" alt="Organic Apple">
-                <h3>Organic Apples</h3>
-                <p>$3.99 per kg</p>
-                <button onclick="addToCart('Organic Apple')">Add to Cart</button>
+
+<body class="product">
+    <!-- Navbar Section -->
+    <header id="full_nav">
+        <div class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="index.html">
+                        <img decoding="async" src="./images/logo.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <!-- <span class="navbar-toggler-icon"></span> -->
+                        <i class="fas fa-stream navbar-toggler-icon"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="main-nav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Product</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">Gallery</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="cart.html">Cart <span class="badge bg-danger cart-quantity-count">0</span></a>
+                            </li>
+                        </ul>
+
+                        <div class="header_right">
+                            <div class="text-lg-end">
+                                <span>Call Us!</span>
+                                <span class="phone_no">+880 1234567898</span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
-            
-            <div class="product">
-                <img src="images/banana.jpg" alt="Organic Banana">
-                <h3>Organic Bananas</h3>
-                <p>$1.99 per kg</p>
-                <button onclick="addToCart('Organic Banana')">Add to Cart</button>
+        </div>
+    </header>
+    <!-- Navbar Section end -->
+
+    <!-- banner Section start -->
+    <section class="banner_section">
+        <div class="container">
+            <div class="banner-content">
+                <h1>Product</h1>
             </div>
         </div>
     </section>
+    <!-- banner section exit -->
 
-    <footer>
-        <p>&copy; 2025 Organic Market</p>
-    </footer>
-    
+    <!--Product Section start -->
+    <section class="product_section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center pb-5">
+                    <h2 class="section-title">Our Best Seller Product</h2>
+                    <p class="section-subtitle">The Passage Experienced A Surge In Popularity During The 1960s When
+                        Again During The 90s As Desktop Publishers</p>
+                </div>
+            </div>
+            <div class="row align-items-center py-5">
+                <div class="col-xl-5 col-lg-6 col-12 mb-5">
+                    <div class="card border-0 me-lg-5">
+                        <img decoding="async" src="./images/products/fresh-fruits1.jpg" alt="products">
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-6 col-12 mb-5">
+                    <div class="product-content">
+                        <h2>Oranges: The Sweet and Juicy Organic Delight</h2>
+                        <div class="product-details">
+                            <p>Our organic oranges are grown using sustainable farming methods, 
+                                free from harmful pesticides and synthetic fertilizers.
+                                Packed with Vitamin C, fiber, and antioxidants, organic oranges support immunity, 
+                                promote skin health, and boost overall well-being.
+                                Organic farming protects the soil and reduces water contamination, contributing to a healthier planet.
+                                The natural sweetness and juicy texture of organic oranges make them a delight for your taste buds.</p>
+
+                            <h4>Benifites Of Organic Orange</h4>
+                            <p>Reduce stress, Boost the Immune system, help prevent kidney stones, Fight cancer Cells,
+                                Natural antiseptic, Clean & clear skin, white Teeth, Stop Dandruff, Aid in digestion,
+                                promote weight loss and many more...</p>
+                            <h4>TK70 KG</h5>
+                            <button href="#" class="btn main-btn buy-now" data-product-code="P1" data-product-name="Oranges" data-product-price="70">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center py-5">
+                <div class="col-xl-7 col-lg-6 col-12 mb-5  order-2 order-lg-1">
+                    <div class="product-content">
+                        <h2>Lemon: The Zesty Organic Marvel</h2>
+                        <div class="product-details">
+                            <p>Bright, tangy, and loaded with goodness, our organic lemons are a staple for health-conscious individuals 
+                                and culinary enthusiasts alike. Cultivated without synthetic pesticides or fertilizers, our organic lemons 
+                                deliver unparalleled freshness and flavor while supporting sustainable farming practices.
+                            </p>
+                            <h4>Benifites Of Lemon</h4>
+                            <p>Reduce stress, Boost the Immune system, help prevent kidney stones, Fight cancer Cells,
+                                Natural antiseptic, Clean & clear skin, white Teeth, Stop Dandruff, Aid in digestion,
+                                promote weight loss and many more...</p>
+                            <h4>TK50 KG</h5>
+                            <button href="#" class="btn main-btn buy-now" data-product-code="P2" data-product-name="Lemon" data-product-price="50">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-6 col-12 mb-5 order-1 order-lg-2">
+                    <div class="card border-0 ms-lg-5">
+                        <img decoding="async" src="./images/products/fresh-fruits2.jpg" alt="product" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center py-5">
+                <div class="col-xl-5 col-lg-6 col-12 mb-5">
+                    <div class="card border-0 me-lg-5">
+                        <img decoding="async" src="./images/products/product-3.jpg" alt="products">
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-6 col-12 mb-5">
+                    <div class="product-content">
+                        <h2>Apple: The Perfect Organic Superfruit</h2>
+                        <div class="product-details">
+                            <p>Crisp, juicy, and irresistibly nutritious, our organic apples are a true gift from nature. Grown without 
+                                synthetic pesticides, herbicides, or GMOs, these apples are the epitome of health and sustainability.
+                                 Every bite of our organic apples reflects our commitment to providing the highest quality 
+                                 produce while protecting the planet.</p>
+
+                            <h4>Benifites Of Organic Apple</h4>
+                            <p>Supports digestion and promotes gut health. Flavonoids and potassium in apples help maintain healthy blood
+                                 pressure and cholesterol levels. Apples are low in calories yet filling, making them a perfect snack for 
+                                 weight-conscious individuals. Supports Healthy Skin as the nutrients in apples promote a radiant complexion</p>
+                            <h4>TK90 KG</h5>
+                            <button href="#" class="btn main-btn buy-now" data-product-code="P3" data-product-name="Apple" data-product-price="90">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center py-5">
+                <div class="col-xl-7 col-lg-6 col-12 mb-5  order-2 order-lg-1">
+                    <div class="product-content">
+                        <h2>Dragon Fruit: The Exotic Organic Superfood</h2>
+                        <div class="product-details">
+                            <p>Bright, bold, and packed with nutrients, dragon fruit is as beneficial as it is beautiful. 
+                                At our organic food store, we bring you the finest organic dragon fruit, cultivated without synthetic 
+                                pesticides or harmful chemicals. With its vibrant colors and refreshing taste, this superfood adds a touch of nature’s 
+                                magic to your diet.
+                            </p>
+                            <h4>Benifites Of Dragon</h4>
+                            <p>Reduce stress, Boost the Immune system, loaded with vitamins and minerals that support glowing skin and healthy hair.
+                                Contains healthy fats and nutrients that help maintain good cholesterol levels.Also, packed with dietary fiber that promotes gut health.
+                            </p>
+                            <h4>TK350 KG</h5>
+                            <button href="#" class="btn main-btn buy-now" data-product-code="P4" data-product-name="Dragon" data-product-price="350">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-6 col-12 mb-5 order-1 order-lg-2">
+                    <div class="card border-0 ms-lg-5">
+                        <img decoding="async" src="./images/products/product-4.jpg" alt="product" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <!--Product Section Exit -->
+
+    <!-- Footer section -->
+    <section class="footer_wrapper mt-3 mt-md-0">
+        <div class="container px-5 px-lg-0">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+                    <h5>Tazza</h5>
+                    <div class="contact-info">
+                        <ul class="list-unstyled">
+                            <li><a href="#"><i class="fa fa-home me-3"></i> Dhaka, Bangladesh</a></li>
+                            <li><a href="#"><i class="fa fa-phone me-3"></i>+1 222 3333</a></li>
+                            <li><a href="#"><i class="fa fa-envelope me-3"></i>info@Tazza.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+                    <h5>Customer Support</h5>
+                    <ul class="link-widget p-0">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Product Returns</a></li>
+                        <li><a href="#">Wholesale Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+                    <h5>Quick Links</h5>
+                    <ul class="link-widget p-0">
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Term Of Use</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+                    <h5>Newsletter</h5>
+                    <div class="form-group mb-4">
+                        <input type="email" class="form-control bg-transparent" placeholder="Enter Your Email Here">
+                        <button type="submit" class="btn main-btn">Subscribe</button>
+                    </div>
+                    <h5>Stay Connected</h5>
+                    <ul class="social-network d-flex align-items-center p-0">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section Exit  -->
+
+    <!-- Bootstrap 5 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
     <script src="js/main.js"></script>
 </body>
-</html>
 
+</html>
